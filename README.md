@@ -52,3 +52,72 @@ Railway pulls latest image
 Public URL generated
 ↓
 Live React App
+
+## How to Run Locally
+
+```bash
+# 1. Clone the repo
+git clone https://github.com/ashrf01234567892-max/devops-project.git
+cd devops-project
+
+# 2. Build the Docker image
+docker build -t devops-app .
+
+# 3. Run the container
+docker run -d -p 8080:80 --name devops-app devops-app
+
+# 4. Open in browser
+http://localhost:8080
+```
+CI/CD Pipeline (GitHub Actions)
+
+Workflow file: .github/workflows/docker-build-push.yml
+Triggers: every push to main
+Steps:
+Checkout code
+Set up Docker Buildx
+Login to GHCR
+Build & push multi-arch image
+Run Trivy scanner (shows vulnerabilities in logs)
+
+Status: <img src="https://github.com/ashrf01234567892-max/devops-project/actions/workflows/docker-build-push.yml/badge.svg" alt="Docker Build &#x26; Push">
+
+Security Scan (Trivy)
+Latest scan results (from GitHub Actions):
+
+Total vulnerabilities: 5
+Critical: 1
+High: 1
+Medium: 3
+
+Most are in Alpine base image packages (libexpat & zlib)
+Typical for production Alpine images in 2026 – not critical for static SPA serving
+
+Technologies Stack
+
+React 19
+Docker (multi-stage)
+Nginx (custom SPA routing)
+GitHub Actions
+Trivy (vulnerability scanning)
+Railway.app (hosting & auto-domain)
+
+Lessons Learned
+
+Multi-stage Docker builds reduce image size dramatically (~94 MB compressed)
+Custom nginx.conf is essential for React Router to handle refresh correctly
+Trivy integration in CI is easy and adds real DevSecOps value
+Railway makes deployment dead-simple with Docker images (no YAML needed)
+
+Future Improvements (Roadmap)
+
+Add auto-deploy from GitHub Actions to Railway via webhook
+Add custom domain
+Add basic monitoring (Railway metrics + external uptime check)
+Migrate to Kubernetes (local minikube or kind)
+
+
+
+تواصل معي
+
+GitHub: https://github.com/ashrf01234567892-max
