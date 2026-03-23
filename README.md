@@ -22,15 +22,20 @@ https://devops-app-production-28a9.up.railway.app/
 ## Screenshots
 
 ### Live Application
-![Live React App](screenshots/live-app.png)
+![Live React App](D:\project-s\cv\live.jpg)
 
 ### Railway Deployment – Active & Online
-![Railway Active Deployment](screenshots/railway-active.png)
+![Railway Active Deployment](D:\project-s\cv\dashboard.jpg)
 
 ### GitHub Actions – Successful Run (with Trivy)
-![GitHub Actions Success with Trivy](screenshots/github-actions-trivy.png)
+![GitHub Actions Success with Trivy](D:\project-s\cv\scans.jpg)
 
 ### Trivy Scan Results (latest run)
-![Trivy Scan Output](screenshots/trivy-scan.png)
+![Trivy Scan Output]   Library    ,CVE ID           ,Severity   ,Installed Version   ,Fixed Version   ,Vulnerability Summary
+                       libexpat   ,CVE-2026-32767   ,CRITICAL   ,2.7.4-r0            ,2.7.5-r0        ,Authorization Bypass 
+                       libexpat   ,CVE-2026-32777   ,MEDIUM     ,-                   ,-               ,DoS via infinite loop in DTD parsing
+                       libexpat   ,CVE-2026-32778   ,MEDIUM     ,-                   ,-               ,DoS via NULL pointer after OOM
+                       zlib       ,CVE-2026-22184   ,HIGH       ,1.3.1-r2            ,1.3.2-r0        ,Arbitrary code execution via buffer overflow
+                       zlib       ,CVE-2026-27171   ,MEDIUM     ,-                   ,-               ,DoS via infinite loop in CRC32
 
 ## Architecture Overview
