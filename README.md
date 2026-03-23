@@ -69,7 +69,7 @@ docker run -d -p 8080:80 --name devops-app devops-app
 # 4. Open in browser
 http://localhost:8080
 ```
-##CI/CD Pipeline (GitHub Actions)
+## CI/CD Pipeline (GitHub Actions)
 
 Workflow file: .github/workflows/docker-build-push.yml
 Triggers: every push to main
@@ -82,7 +82,7 @@ Run Trivy scanner (shows vulnerabilities in logs)
 
 Status: <img src="https://github.com/ashrf01234567892-max/devops-project/actions/workflows/docker-build-push.yml/badge.svg" alt="Docker Build &#x26; Push">
 
-##Security Scan (Trivy)
+## Security Scan (Trivy)
 Latest scan results (from GitHub Actions):
 
 Total vulnerabilities: 5
@@ -93,7 +93,7 @@ Medium: 3
 Most are in Alpine base image packages (libexpat & zlib)
 Typical for production Alpine images in 2026 – not critical for static SPA serving
 
-##Technologies Stack
+## Technologies Stack
 
 React 19
 Docker (multi-stage)
