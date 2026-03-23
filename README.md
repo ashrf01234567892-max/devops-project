@@ -39,3 +39,16 @@ https://devops-app-production-28a9.up.railway.app/
                        zlib       ,CVE-2026-27171   ,MEDIUM     ,-                   ,-               ,DoS via infinite loop in CRC32
 
 ## Architecture Overview
+GitHub Push → GitHub Actions
+↓
+Build Docker Image
+↓
+Trivy Vulnerability Scan
+↓
+Push Image to GHCR
+↓
+Railway pulls latest image
+↓
+Public URL generated
+↓
+Live React App
