@@ -22,13 +22,13 @@ https://devops-app-production-28a9.up.railway.app/
 ## Screenshots
 
 ### Live Application
-![Live React App](D:\project-s\cv\live.jpg)
+![Live React App](live.jpg)
 
 ### Railway Deployment – Active & Online
-![Railway Active Deployment](D:\project-s\cv\dashboard.jpg)
+![Railway Active Deployment](dashboard.jpg)
 
 ### GitHub Actions – Successful Run (with Trivy)
-![GitHub Actions Success with Trivy](D:\project-s\cv\scans.jpg)
+![GitHub Actions Success with Trivy](scans.jpg)
 
 ### Trivy Scan Results (latest run)
 ![Trivy Scan Output]   Library    ,CVE ID           ,Severity   ,Installed Version   ,Fixed Version   ,Vulnerability Summary
